@@ -13,8 +13,6 @@ public class SpringBootProject2Application {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringBootProject2Application.class, args);
 		StudentController studentController = context.getBean(StudentController.class);
-		try{System.out.println(studentController.readData());}
-		catch(IOException e) {System.out.println(e);}
 	}
 
 }
